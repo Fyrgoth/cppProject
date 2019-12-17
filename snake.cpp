@@ -22,9 +22,6 @@ void Setup(){
 
 }
 
-void Draw(){
-
-}
 void Move(){
     for(int i=nTail;i>0;i--){
         tailX[i]=tailX[i-1];
@@ -106,7 +103,6 @@ int main(){
 
     while(gameOver!=true){
         Move();
-        Draw();
 
         setfillstyle(1,0);
         bar(0,0,500,500);
